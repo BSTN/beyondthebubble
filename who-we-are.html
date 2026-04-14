@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Who We Are — Beyond The Bubble</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f7f5ee;
+    color: #111;
+  }
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 64px;
+    background: #d4f000;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+  }
+  nav a.home {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #111;
+  }
+  nav a.home:hover { opacity: 0.6; }
+  nav .links { display: flex; gap: 32px; }
+  nav .links a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #111;
+    opacity: 0.55;
+    letter-spacing: 0.03em;
+    transition: opacity 0.15s;
+  }
+  nav .links a:hover, nav .links a.active { opacity: 1; }
+
+  /* Hero with photo */
+  .hero-img {
+    margin-top: 62px;
+    width: 100%;
+    height: 52vw;
+    max-height: 620px;
+    overflow: hidden;
+  }
+  .hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+    display: block;
+  }
+
+  .hero {
+    padding: 72px 64px 80px;
+    max-width: 900px;
+  }
+  .hero .label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 24px;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .section {
+    padding: 80px 64px;
+    max-width: 780px;
+    border-top: 1px solid #ddd;
+  }
+  .section h2 {
+    font-size: 11px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 32px;
+  }
+  .section p {
+    font-size: clamp(16px, 1.6vw, 19px);
+    line-height: 1.75;
+    color: #222;
+    margin-bottom: 24px;
+  }
+  .section p:last-child { margin-bottom: 0; }
+
+  footer {
+    padding: 32px 64px;
+    font-size: 11px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #aaa;
+    letter-spacing: 0.04em;
+    border-top: 1px solid #e8e5dc;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+
+  @media (max-width: 600px) {
+    nav { padding: 16px 24px; }
+    nav .links { gap: 16px; }
+    .hero, .section, footer { padding-left: 24px; padding-right: 24px; }
+    .hero-img { height: 70vw; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="home" href="index.html">Beyond The Bubble</a>
+  <div class="links">
+    <a href="proposal.html">Proposal</a>
+    <a href="research.html">Research</a>
+    <a href="who-we-are.html" class="active">Who we are</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+
+<div class="hero">
+  <p class="label">Who we are</p>
+  <h1>A cooperative of artists, technologists, and ecological institutions.</h1>
+</div>
+
+<div class="section">
+  <h2>Zone2Source</h2>
+  <p>Zone2Source is an exhibition space and artistic research platform with deep expertise in Art and Ecology, a wide international network, and extensive experience managing artist residencies, pedagogical programmes, and long-term ecological research projects.</p>
+  <p>Zone2Source operates from the Amstelpark in Amsterdam. On 4 October 2025, Zone2Source and the City of Amsterdam co-signed a formal agreement making the Amstelpark the first public Zoöp in the Netherlands, embedding the agenda of encountering non-human perspectives through art in municipal policy.</p>
+</div>
+
+<div class="section">
+  <h2>The Makers</h2>
+  <p>The five artists in the cooperative bring together practices spanning immersive installation, ecological fieldwork, wearable sensing instruments, kinetic sculpture, game engine simulation, interactive media, and in-situ prototyping. Their work engages non-human life not as subject matter but as co-investigator: ecosystems, organisms, and ecological data feed directly into the design of the experiences they make.</p>
+  <p>Each artist brings a distinct methodological perspective. Together they cover a broad range of IX technologies and approaches. What unites them is a commitment to embodied knowledge: work that is felt before it is understood, and that engages the body as its primary site of inquiry.</p>
+</div>
+
+<div class="section">
+  <h2>Creative Coding Utrecht</h2>
+  <p>Creative Coding Utrecht is a digital culture platform bridging art, technology, ecology, and society. It contributes open-source infrastructure, community-building capacity, and technical development to the consortium. CCU hosts the Creative Coding Instrumentarium, the platform through which the consortium's research outputs, toolkits, and documentation are published for open access. CCU also operates as a Zoöp, sharing the organisational ethos that runs through the consortium as a whole.</p>
+</div>
+
+<div class="section">
+  <h2>The Cooperative</h2>
+  <p>The consortium is structured as a cooperative. This is not a conventional arrangement where a lead institution commissions a constellation of external parties. Zone2Source, the five artists, and Creative Coding Utrecht are all members, each with a seat at the table. Programme decisions, artistic direction, and research accountability are held collectively. The ecological partners — ARTIS, Naturalis, and NIOO — also participate in shaping the programme through the research tracks they host, contributing scientific expertise, themes, and field access from within the structure rather than from the outside.</p>
+  <p>The cooperative form strengthens Zone2Source rather than complicating it. It distributes the executive load, surfaces friction early, and keeps incentives aligned: payments to members are coupled to delivery. Where a classical consortium places all risk on the lead applicant, the cooperative monitors progress collectively and redistributes when needed. It is a governance structure built for the kind of long-term, multi-partner, research-intensive work this project requires.</p>
+</div>
+
+<footer>
+  <span>Beyond The Bubble · Zone2Source · Amsterdam</span>
+  <span>2026–2028</span>
+</footer>
+
+</body>
+</html>

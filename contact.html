@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Beyond The Bubble</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, "Times New Roman", serif; background: #f7f5ee; color: #111; }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 64px; background: #d4f000;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+  }
+  nav a.home { font-family: Georgia, serif; font-size: 16px; text-decoration: none; color: #111; }
+  nav a.home:hover { opacity: 0.6; }
+  nav .links { display: flex; gap: 32px; }
+  nav .links a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px; text-decoration: none; color: #111;
+    opacity: 0.55; letter-spacing: 0.03em; transition: opacity 0.15s;
+  }
+  nav .links a:hover, nav .links a.active { opacity: 1; }
+  .hero { padding: 160px 64px 96px; max-width: 900px; }
+  .hero .label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #888; margin-bottom: 24px;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 4vw, 48px); font-weight: 400;
+    line-height: 1.2; letter-spacing: -0.02em;
+  }
+  .section { padding: 80px 64px; max-width: 780px; border-top: 1px solid #ddd; }
+  .section h2 {
+    font-size: 11px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin-bottom: 32px;
+  }
+  .section p { font-size: clamp(16px, 1.6vw, 19px); line-height: 1.75; color: #222; margin-bottom: 24px; }
+  .section p:last-child { margin-bottom: 0; }
+  .contact-link {
+    display: inline-block;
+    font-size: clamp(20px, 2.5vw, 32px);
+    color: #111;
+    text-decoration: none;
+    border-bottom: 1px solid #111;
+    padding-bottom: 4px;
+    transition: opacity 0.15s;
+    font-family: Georgia, serif;
+  }
+  .contact-link:hover { opacity: 0.5; }
+  footer {
+    padding: 32px 64px; font-size: 11px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #aaa; letter-spacing: 0.04em;
+    border-top: 1px solid #e8e5dc;
+    display: flex; justify-content: space-between; margin-top: 80px;
+  }
+  @media (max-width: 600px) {
+    nav { padding: 16px 24px; } nav .links { gap: 16px; }
+    .hero, .section, footer { padding-left: 24px; padding-right: 24px; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a class="home" href="index.html">Beyond The Bubble</a>
+  <div class="links">
+    <a href="proposal.html">Proposal</a>
+    <a href="research.html">Research</a>
+    <a href="who-we-are.html">Who we are</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <p class="label">Contact</p>
+  <h1>Get in touch.</h1>
+</div>
+
+<div class="section">
+  <h2>For enquiries about the project</h2>
+  <p><a class="contact-link" href="mailto:daan.brinkmann@gmail.com">daan.brinkmann@gmail.com</a></p>
+</div>
+
+<div class="section">
+  <h2>Zone2Source</h2>
+  <p>Zone2Source is located in the Amstelpark, Amsterdam. For information about Zone2Source's broader programme and residencies, visit <a href="https://zone2source.net" style="color:#111;">zone2source.net</a>.</p>
+</div>
+
+<footer>
+  <span>Beyond The Bubble · Zone2Source · Amsterdam</span>
+  <span>2026–2028</span>
+</footer>
+</body>
+</html>
