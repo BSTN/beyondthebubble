@@ -54,7 +54,18 @@
   }
   @media (max-width: 800px) { .pillars-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 600px) {
-    nav { padding: 16px 24px; } nav .links { gap: 16px; }
+    nav {
+      padding: 16px 24px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    nav .links {
+      width: 100%;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .hero { padding-top: 196px; }
     .hero, .section, .pillars, footer { padding-left: 24px; padding-right: 24px; }
     .pillars-grid { grid-template-columns: 1fr; }
   }

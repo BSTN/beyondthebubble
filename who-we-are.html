@@ -110,10 +110,20 @@
   }
 
   @media (max-width: 600px) {
-    nav { padding: 16px 24px; }
-    nav .links { gap: 16px; }
+    nav {
+      padding: 16px 24px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    nav .links {
+      width: 100%;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
     .hero, .section, footer { padding-left: 24px; padding-right: 24px; }
-    .hero-img { height: 70vw; }
+    .hero { padding-top: 116px; }
+    .hero-img { height: 70vw; margin-top: 108px; }
   }
 </style>
 </head>
