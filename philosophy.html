@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Philosophy — Beyond The Bubble</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, "Times New Roman", serif; background: #f7f5ee; color: #111; }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 64px; background: #d4f000;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+  }
+  nav a.home { font-family: Georgia, serif; font-size: 16px; text-decoration: none; color: #111; }
+  nav a.home:hover { opacity: 0.6; }
+  nav .links { display: flex; gap: 32px; }
+  nav .links a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px; text-decoration: none; color: #111;
+    opacity: 0.55; letter-spacing: 0.03em; transition: opacity 0.15s;
+  }
+  nav .links a:hover, nav .links a.active { opacity: 1; }
+  .hero { padding: 160px 64px 96px; max-width: 900px; }
+  .hero .label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #888; margin-bottom: 24px;
+  }
+  .hero h1 { font-size: clamp(28px, 4vw, 48px); font-weight: 400; line-height: 1.2; letter-spacing: -0.02em; }
+  .section { padding: 80px 64px; max-width: 780px; border-top: 1px solid #ddd; }
+  .section h2 {
+    font-size: 11px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin-bottom: 32px;
+  }
+  .section p { font-size: clamp(16px, 1.6vw, 19px); line-height: 1.75; color: #222; margin-bottom: 24px; }
+  .section p:last-child { margin-bottom: 0; }
+  .callout { padding: 80px 64px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .callout blockquote {
+    font-size: clamp(24px, 4vw, 48px); font-weight: 400;
+    line-height: 1.2; letter-spacing: -0.02em; color: #111;
+    max-width: 820px; font-style: italic;
+  }
+  footer {
+    padding: 32px 64px; font-size: 11px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #aaa; letter-spacing: 0.04em;
+    border-top: 1px solid #e8e5dc;
+    display: flex; justify-content: space-between; margin-top: 80px;
+  }
+  @media (max-width: 600px) {
+    nav { padding: 16px 24px; } nav .links { gap: 16px; }
+    .hero, .section, .callout, footer { padding-left: 24px; padding-right: 24px; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a class="home" href="index.html">Beyond The Bubble</a>
+  <div class="links">
+    <a href="philosophy.html" class="active">Philosophy</a>
+    <a href="research.html">Research</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <p class="label">Philosophy</p>
+  <h1>Our mission is to increase ecological empathy with other-than-human worlds through immersive experience.</h1>
+</div>
+
+<div class="section">
+  <h2>The Problem</h2>
+  <p>In 1974, Thomas Nagel asked: what is it like to be a bat? His answer, that we cannot know, highlights a limit of consciousness and subjective experience: the Umwelt, the species-specific sensory bubble within which every organism perceives only its relevant slice of reality. We see 0.0035% of the electromagnetic spectrum. The platypus navigates by electrical field. The silk moth reads a single pheromone molecule from kilometres away. The living world is saturated with perceptual dimensions closed to us.</p>
+  <p>Philosopher Baptiste Morizot calls this the root of the ecological crisis: a crisis of sensibility. We treat other-than-human life as backdrop and resource because we cannot sense it as presence. The ecological crisis is, at its core, a perceptual one.</p>
+  <p>As a species, we evolved to perceive threats that are immediate, local, visible, caused by an identifiable agent, and threatening to ourselves. These are the conditions under which fear, care, and response were adaptive. Ecological crises share none of these properties. They are slow, planetary, diffuse, and threatening to a non-human world most people will never directly encounter. The perceptual apparatus that served us well for most of human history was not built for this. That is not a moral failing. It is a description of a mismatch between the world we evolved in and the one we now inhabit.</p>
+</div>
+
+<div class="section">
+  <h2>The Approach</h2>
+  <p>The Umwelt is a boundary, not a wall. We accept Nagel's conclusion: full translation of another species' experience is impossible. What remains possible is the attempt: pressing against the boundary to find how far it moves, and what it reveals when it doesn't. Where an attempt at translation fails, that failure is informative. It maps the contour of the human blind spot, marking what cannot yet be reached and why. Where it succeeds, even partially, it extends the boundary outward, making something of the non-human world available that was not available before.</p>
+  <p>Immersive experience enters here not as illustration or spectacle, but as a research instrument. What IX can produce is affective translation: a designed encounter that renders non-human perceptual realities in terms the human body can register. Not as accurate reproduction, but as felt approximation. This works because IX generates presence: the subjective sensation of actually being in the situation, strong enough to activate affective and cognitive responses the way a real encounter would. The result is embodied knowledge: knowledge that is felt before it is understood.</p>
+</div>
+
+<div class="callout">
+  <blockquote>"How can we design experiences that make non-human worlds perceptible?"</blockquote>
+</div>
+
+<footer>
+  <span>Beyond The Bubble · Amsterdam</span>
+  <span>2026–2028</span>
+</footer>
+</body>
+</html>

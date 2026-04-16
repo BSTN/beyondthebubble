@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — Beyond The Bubble</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, "Times New Roman", serif; background: #f7f5ee; color: #111; }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 64px; background: #d4f000;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+  }
+  nav a.home { font-family: Georgia, serif; font-size: 16px; text-decoration: none; color: #111; }
+  nav a.home:hover { opacity: 0.6; }
+  nav .links { display: flex; gap: 32px; }
+  nav .links a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px; text-decoration: none; color: #111;
+    opacity: 0.55; letter-spacing: 0.03em; transition: opacity 0.15s;
+  }
+  nav .links a:hover, nav .links a.active { opacity: 1; }
+  .hero { padding: 160px 64px 96px; max-width: 900px; }
+  .hero .label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #888; margin-bottom: 24px;
+  }
+  .hero h1 { font-size: clamp(28px, 4vw, 48px); font-weight: 400; line-height: 1.2; letter-spacing: -0.02em; }
+  .section { padding: 80px 64px; max-width: 780px; border-top: 1px solid #ddd; }
+  .section h2 {
+    font-size: 11px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin-bottom: 32px;
+  }
+  .section p { font-size: clamp(16px, 1.6vw, 19px); line-height: 1.75; color: #222; margin-bottom: 24px; }
+  .section p:last-child { margin-bottom: 0; }
+  .pillars { padding: 80px 64px; border-top: 1px solid #ddd; max-width: 980px; }
+  .pillars h2 {
+    font-size: 11px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin-bottom: 48px;
+  }
+  .pillars-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+  .pillar { background: #eeeade; padding: 36px 28px; }
+  .pillar h3 { font-size: 16px; font-weight: 400; margin-bottom: 14px; }
+  .pillar p { font-size: 13px; line-height: 1.65; color: #555; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  footer {
+    padding: 32px 64px; font-size: 11px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #aaa; letter-spacing: 0.04em;
+    border-top: 1px solid #e8e5dc;
+    display: flex; justify-content: space-between; margin-top: 80px;
+  }
+  @media (max-width: 800px) { .pillars-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) {
+    nav { padding: 16px 24px; } nav .links { gap: 16px; }
+    .hero, .section, .pillars, footer { padding-left: 24px; padding-right: 24px; }
+    .pillars-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a class="home" href="index.html">Beyond The Bubble</a>
+  <div class="links">
+    <a href="philosophy.html">Philosophy</a>
+    <a href="research.html">Research</a>
+    <a href="about.html" class="active">About Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <p class="label">About Us</p>
+  <h1>An initiative formed in March 2026, working at the intersection of immersive experience and non-human life.</h1>
+</div>
+
+<div class="section">
+  <h2>Who We Are</h2>
+  <p>We are an initiative formed in March 2026. We operate cooperatively: a group of artists, an ecology and art platform, a digital culture organisation, and three ecological institutions working together on a shared research agenda. There is no lead institution directing the work from above. Artistic direction, research decisions, and programme choices are made collectively.</p>
+  <p>The initiative was developed jointly by Zone2Source and a group of five artists. Zone2Source hosts the cooperative, providing the organisational and administrative home from which the work is produced. The artists brought the creative and research agenda; Zone2Source brought the institutional capacity and ecological network to make it possible.</p>
+</div>
+
+<div class="section">
+  <h2>Zone2Source</h2>
+  <p>Zone2Source is an exhibition space and artistic research platform with deep expertise in Art and Ecology, a wide international network, and extensive experience managing artist residencies, pedagogical programmes, and long-term ecological research projects.</p>
+  <p>Zone2Source operates from the Amstelpark in Amsterdam. On 4 October 2025, Zone2Source and the City of Amsterdam co-signed a formal agreement making the Amstelpark the first public Zoöp in the Netherlands, embedding the agenda of encountering non-human perspectives through art in municipal policy.</p>
+</div>
+
+<div class="section">
+  <h2>The Makers</h2>
+  <p>The five artists bring together practices spanning immersive installation, ecological fieldwork, wearable sensing instruments, kinetic sculpture, game engine simulation, interactive media, and in-situ prototyping. Their work engages non-human life not as subject matter but as co-investigator: ecosystems, organisms, and ecological data feed directly into the design of the experiences they make.</p>
+  <p>Each artist brings a distinct methodological perspective. Together they cover a broad range of IX technologies and approaches. What unites them is a commitment to embodied knowledge: work that is felt before it is understood, and that engages the body as its primary site of inquiry.</p>
+</div>
+
+<div class="section">
+  <h2>Creative Coding Utrecht</h2>
+  <p>Creative Coding Utrecht is a digital culture platform bridging art, technology, ecology, and society. It contributes open-source infrastructure, community-building capacity, and technical development to the initiative. CCU also operates as a Zoöp, sharing the organisational ethos that runs through the initiative as a whole.</p>
+</div>
+
+<div class="pillars">
+  <h2>How We Work</h2>
+  <div class="pillars-grid">
+    <div class="pillar">
+      <h3>Agency</h3>
+      <p>The artists are not externals commissioned by an institution. They are members with a seat at the table. Artistic direction and programme decisions are held collectively.</p>
+    </div>
+    <div class="pillar">
+      <h3>Resilience</h3>
+      <p>If one member's capacity fluctuates, the group redistributes rather than stalls. Friction surfaces early and is resolved collectively. Payments are coupled to delivery.</p>
+    </div>
+    <div class="pillar">
+      <h3>Agility</h3>
+      <p>A horizontal structure with short lines of communication allows the initiative to respond quickly and adapt when needed.</p>
+    </div>
+    <div class="pillar">
+      <h3>Accountability</h3>
+      <p>Zone2Source holds financial responsibility and formal accountability. The cooperative holds programme governance. These are complementary roles, not competing ones.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>Beyond The Bubble · Amsterdam</span>
+  <span>2026–2028</span>
+</footer>
+</body>
+</html>

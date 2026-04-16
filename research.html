@@ -6,156 +6,78 @@
 <title>Research — Beyond The Bubble</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: Georgia, "Times New Roman", serif;
-    background: #f7f5ee;
-    color: #111;
-  }
-
+  body { font-family: Georgia, "Times New Roman", serif; background: #f7f5ee; color: #111; }
   nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 64px;
-    background: #d4f000;
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 64px; background: #d4f000;
     border-bottom: 1px solid rgba(0,0,0,0.12);
   }
-  nav a.home {
-    font-family: Georgia, serif;
-    font-size: 16px;
-    text-decoration: none;
-    color: #111;
-  }
+  nav a.home { font-family: Georgia, serif; font-size: 16px; text-decoration: none; color: #111; }
   nav a.home:hover { opacity: 0.6; }
   nav .links { display: flex; gap: 32px; }
   nav .links a {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    text-decoration: none;
-    color: #111;
-    opacity: 0.55;
-    letter-spacing: 0.03em;
-    transition: opacity 0.15s;
+    font-size: 13px; text-decoration: none; color: #111;
+    opacity: 0.55; letter-spacing: 0.03em; transition: opacity 0.15s;
   }
   nav .links a:hover, nav .links a.active { opacity: 1; }
-
-  .hero {
-    padding: 160px 64px 96px;
-    max-width: 900px;
-  }
+  .hero { padding: 160px 64px 96px; max-width: 900px; }
   .hero .label {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #888;
-    margin-bottom: 24px;
+    font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #888; margin-bottom: 24px;
   }
-  .hero h1 {
-    font-size: clamp(28px, 4vw, 48px);
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-  }
-
-  .section {
-    padding: 80px 64px;
-    max-width: 780px;
-    border-top: 1px solid #ddd;
-  }
+  .hero h1 { font-size: clamp(28px, 4vw, 48px); font-weight: 400; line-height: 1.2; letter-spacing: -0.02em; }
+  .section { padding: 80px 64px; max-width: 780px; border-top: 1px solid #ddd; }
   .section h2 {
-    font-size: 11px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #888;
-    margin-bottom: 32px;
+    font-size: 11px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin-bottom: 32px;
   }
-  .section p {
-    font-size: clamp(16px, 1.6vw, 19px);
-    line-height: 1.75;
-    color: #222;
-    margin-bottom: 24px;
-  }
+  .section p { font-size: clamp(16px, 1.6vw, 19px); line-height: 1.75; color: #222; margin-bottom: 24px; }
   .section p:last-child { margin-bottom: 0; }
-
-  /* Tracks */
-  .tracks {
-    padding: 80px 64px;
-    border-top: 1px solid #ddd;
-    max-width: 980px;
+  .section ul { margin: 0 0 24px 0; padding: 0; list-style: none; }
+  .section ul li {
+    font-size: clamp(16px, 1.6vw, 19px); line-height: 1.75; color: #222;
+    padding: 16px 0; border-top: 1px solid #e8e5dc;
+    padding-left: 20px; position: relative;
   }
+  .section ul li:last-child { border-bottom: 1px solid #e8e5dc; }
+  .section ul li::before { content: "→"; position: absolute; left: 0; color: #aaa; }
+  .tracks { padding: 80px 64px; border-top: 1px solid #ddd; max-width: 980px; }
   .tracks h2 {
-    font-size: 11px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #888;
-    margin-bottom: 48px;
+    font-size: 11px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin-bottom: 48px;
   }
-  .tracks-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
-  }
-  .track {
-    background: #eeeade;
-    padding: 40px 36px;
-  }
+  .tracks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+  .track { background: #eeeade; padding: 40px 36px; }
   .track .partner {
-    font-size: 11px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #888;
-    margin-bottom: 16px;
+    font-size: 11px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.1em; text-transform: uppercase; color: #888; margin-bottom: 16px;
   }
-  .track h3 {
-    font-size: clamp(17px, 1.8vw, 22px);
-    font-weight: 400;
-    line-height: 1.3;
-    margin-bottom: 16px;
-  }
-  .track p {
-    font-size: 14px;
-    line-height: 1.65;
-    color: #555;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-
+  .track h3 { font-size: clamp(17px, 1.8vw, 22px); font-weight: 400; line-height: 1.3; margin-bottom: 16px; }
+  .track p { font-size: 14px; line-height: 1.65; color: #555; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   footer {
-    padding: 32px 64px;
-    font-size: 11px;
+    padding: 32px 64px; font-size: 11px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #aaa;
-    letter-spacing: 0.04em;
+    color: #aaa; letter-spacing: 0.04em;
     border-top: 1px solid #e8e5dc;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
+    display: flex; justify-content: space-between; margin-top: 80px;
   }
-
-  @media (max-width: 800px) {
-    .tracks-grid { grid-template-columns: 1fr; }
-  }
+  @media (max-width: 800px) { .tracks-grid { grid-template-columns: 1fr; } }
   @media (max-width: 600px) {
-    nav { padding: 16px 24px; }
-    nav .links { gap: 16px; }
+    nav { padding: 16px 24px; } nav .links { gap: 16px; }
     .hero, .section, .tracks, footer { padding-left: 24px; padding-right: 24px; }
   }
 </style>
 </head>
 <body>
-
 <nav>
   <a class="home" href="index.html">Beyond The Bubble</a>
   <div class="links">
-    <a href="proposal.html">Proposal</a>
+    <a href="philosophy.html">Philosophy</a>
     <a href="research.html" class="active">Research</a>
-    <a href="who-we-are.html">Who we are</a>
+    <a href="about.html">About Us</a>
     <a href="contact.html">Contact</a>
   </div>
 </nav>
@@ -166,16 +88,25 @@
 </div>
 
 <div class="section">
-  <h2>The Medium</h2>
-  <p>Immersive experience addresses the body, not just the mind. It produces embodied knowledge: felt before it is understood, registering in the senses before it reaches language. When experience is spatially enveloping, multisensory, and shaped by the audience's own behaviour, it activates the affective registers through which people form attachment and concern. The consortium investigates three properties that make this possible: spatial immersion, multisensory simultaneity, and agency.</p>
+  <h2>Research Questions</h2>
+  <ul>
+    <li>How can immersive experience make non-human worlds perceptible to human audiences?</li>
+    <li>What principles govern affective translation: the rendering of ecologically real but humanly imperceptible phenomena into forms the body can register?</li>
+    <li>Can IX generate ecological empathy in people with no prior ecological engagement, and if so, through what design properties?</li>
+  </ul>
 </div>
 
 <div class="section">
   <h2>Methods</h2>
-  <p>Ecological fieldwork forms the foundation of each research track. Working groups go into the field with mixed teams of artists, scientists, designers, and students: into archives, to field stations, into habitats. They gather source material, test early prototypes in situ, and learn from each other's methods.</p>
-  <p>Artistic research is one investigative method among several. Questions about presence, agency, and embodied cognition are addressed through making and testing with audiences. Phenomenological analysis of what actually happens inside an immersive experience is part of how the research is evaluated and iterated.</p>
-  <p>The consortium also draws on ecological and scientific research methods through its institutional partners. NIOO and Naturalis contribute scientific expertise, field access, and research themes drawn from active programmes. TU Delft provides prototyping labs and technical research capacity, bridging the work between artistic intent and material and technological realisation.</p>
-  <p>Design research runs across all of this: iterative prototyping, playtesting, and systematic public feedback shape each work from early concept to final form. The results of this process accumulate into a concrete output: an open-access IX design toolkit covering methods, guidelines, and documented prototypes, available to practitioners and researchers working in this field.</p>
+  <p>The research draws on artistic research, ecological fieldwork, and design methods in combination. Artistic research investigates presence, agency, and embodied cognition through making and testing. Ecological fieldwork brings mixed groups of artists and scientists into direct contact with habitats, archives, and field stations. Design research runs across both: iterative prototyping and public playtesting shape each work from early concept toward final form.</p>
+  <p>Technical and scientific research capacity connects artistic intent to material and technological realisation, bridging the work between immersive experience design and the precision of ecological measurement. The ambition is to reach a wide public through high-traffic venues and public space, and to contribute openly to the wider IX field through design guidelines and documented methods.</p>
+</div>
+
+<div class="section">
+  <h2>The Tracks</h2>
+  <p>The research begins with the ecological partners. Each brings a different relationship to non-human life: one rooted in biodiversity science, one in the mechanisms of ecological systems, one in how humans and other species share urban and natural space. From within their active scientific programmes, each partner identifies research themes where the distance between what science knows and what the general public can feel is largest. These themes become the starting points for the work.</p>
+  <p>From each theme, a working group forms around at least one maker, with a core of complementary expertise drawn from ecology, technology, and design. The structure is flexible: a fixed inner core provides continuity, while an outer layer of specialists and invited practitioners expands as the work demands. The ecological partner stays involved throughout as a research collaborator, contributing literature, field access, and scientific context.</p>
+  <p>The groups go into the field together. Multi-day expeditions bring the full team into direct contact with the habitats, archives, and environments relevant to their theme. Fieldwork is followed by prototyping in labs and facilities available to the project. Prototypes are tested publicly, refined, and tested again. What accumulates across this cycle is not just a set of works but a documented body of knowledge: methods, findings, design guidelines, and field materials published openly as they develop.</p>
 </div>
 
 <div class="tracks">
@@ -184,7 +115,7 @@
     <div class="track">
       <p class="partner">Naturalis</p>
       <h3>Knowledge production about biodiversity</h3>
-      <p>Naturalis connects the consortium to active scientific programmes, specimen collections, and researchers working at the frontier of biodiversity research. Research themes are drawn from their current scientific agenda.</p>
+      <p>Naturalis connects the research to active scientific programmes, specimen collections, and researchers working at the frontier of biodiversity science. Research themes are drawn from their current scientific agenda.</p>
     </div>
     <div class="track">
       <p class="partner">NIOO-KNAW</p>
@@ -201,13 +132,12 @@
 
 <div class="section">
   <h2>Open Domain</h2>
-  <p>The research produced by the consortium is published openly. Design guidelines, methodological frameworks, field documentation, and prototype records are made available as an open-access IX design toolkit: a concrete, reusable resource for practitioners and researchers working at the intersection of ecology and immersive experience.</p>
+  <p>The research is published openly. Design guidelines, methodological frameworks, field documentation, and prototype records are made available as an open-access IX design toolkit: a concrete, reusable resource for practitioners and researchers working at the intersection of ecology and immersive experience.</p>
 </div>
 
 <footer>
-  <span>Beyond The Bubble · Zone2Source · Amsterdam</span>
+  <span>Beyond The Bubble · Amsterdam</span>
   <span>2026–2028</span>
 </footer>
-
 </body>
 </html>
